@@ -20,7 +20,7 @@ for(let i = 0; i < 10; i++){
     }
     else{
         array = [i];
-        array = [numUtente]
+        array = [numUtente];
         console.log(array);
         
         somma = somma + numUtente;
@@ -30,5 +30,5 @@ for(let i = 0; i < 10; i++){
 console.log("la somma dei numeri è: " + somma);
 
 let p = document.querySelector("#risultato");
-p.innerHTML += "Risultato della somma dei numeri inseriti è : " + somma;
+p.innerHTML = "Risultato della somma dei numeri inseriti è : " + somma;
 
