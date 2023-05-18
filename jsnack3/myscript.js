@@ -16,29 +16,27 @@ for(let i = 0; i < 6; i++){
 
     if(isNaN(numUtente)){
         console.log("Il numero " + (i+1) + " non è stato inserito");
-        /*
+
         array[i] = [];
         console.log(array[i]);
         
         p.innerHTML += "[ ]  " ;
-        */
+        
     }
     else{
 
         if((numUtente % 2) === 0){
             console.log("Il numero " + (i+1) + " è pari");
-            /*
-            array = [i];
-            array = [];
             
-            console.log(array);
+            array[i] = [];
+            console.log(array[i]);
             p.innerHTML += "[ ]  " ;
-            */
+            
             
         }
         else{
-            console.log("Il numero "+ (i+1) + " è dispari = " + array[i]);
             array[i] = numUtente;
+            console.log("Il numero "+ (i+1) + " è dispari = " + array[i]);
             console.log(array[i]);
             
             p.innerHTML += "[" + array[i] + "]  " ;
