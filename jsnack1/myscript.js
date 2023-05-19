@@ -15,19 +15,19 @@ for(let i = 0; i < 10; i++){
     numUtente = parseInt(prompt("Inserisci " + (i+1) + "° numero"));
 
     if(isNaN(numUtente)){
-        array = []
+        array = [];
         console.log(array);
     }
     else{
-        array = [i];
-        array = [numUtente];
-        console.log(array);
+        array[i] = numUtente;
+        console.log("Nella posizione = " + i + " numero: " + array[i]);
         
         somma = somma + numUtente;
         
     }
 }
 console.log("la somma dei numeri è: " + somma);
+console.log(array.length);
 
 let p = document.querySelector("#risultato");
 p.innerHTML = "Risultato della somma dei numeri inseriti è : " + somma;
